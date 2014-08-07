@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+<?php
+	\$model = \$this->model;
+	\$form = [
+		'title' => \$model->id ? \$model->name: "New ${1:Model}",
+		'showErrors' => true,
+		'elements' => [
+			'heading' => [],
+			'<div class="form-sb">',
+		],
+		'buttons' => [
+			'save' => ['type' => 'htmlSubmit', 'label' => 'Save', 'class' => 'btn-save'],
+			'</div>',
+		]
+	];
+ 
+	return \$form;
+?>
+]]></content>
+	<description>php,yiiform</description>
+	<tabTrigger>yf</tabTrigger>
+	<scope>text.html.basic</scope>
+</snippet>

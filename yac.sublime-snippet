@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<?php
+ 
+	class ${1:Model}Controller extends AdminController
+	{
+		public \$modelClass = "${1:Model}",
+			   \$formName = "${1:form}";
+			   
+		use admin;
+	}
+?>
+]]></content>
+	<description>php,yiiadmincontroller</description>
+	<tabTrigger>yac</tabTrigger>
+	<scope>text.html.basic</scope>
+</snippet>

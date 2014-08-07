@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+<?php
+ 
+	class ${1:class} extends GMongoDocument{
+ 
+		public function collectionName()
+		{
+			return '${2:collection}';
+		}
+ 
+		public static function model(\$className=__CLASS__)
+		{
+				return parent::model(\$className);
+		}
+	}
+?>
+]]></content>
+	<description>php,yiimodel</description>
+	<tabTrigger>ym</tabTrigger>
+	<scope>text.html.basic</scope>
+</snippet>
